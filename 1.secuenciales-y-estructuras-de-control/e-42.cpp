@@ -18,9 +18,7 @@ int main() {
   cout << "Escribir capital actual: ";
   cin >> capitalActual;
 
-  if (capitalActual <= 0) {
-    prestamo = (10000 - capitalActual);
-  }
+  if (capitalActual <= 0) prestamo = (10000 - capitalActual);
 
   return 0;
 }
