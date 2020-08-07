@@ -24,22 +24,13 @@ int main() {
   cout << "Ingrese su salario mensual: ";
   cin >> salario;
 
-  if (years < 1) {
-    utilidad = salario * porcentajes[0];
-    utilidad += salario;
-  } else if (years >= 1 && years < 2) {
-    utilidad = salario * porcentajes[1];
-    utilidad += salario;
-  } else if (years >= 2 && years < 5) {
-    utilidad = salario * porcentajes[2];
-    utilidad += salario;
-  } else if (years >= 5 && years < 10) {
-    utilidad = salario * porcentajes[3];
-    utilidad += salario;
-  } else {
-    utilidad = salario * porcentajes[4];
-    utilidad += salario;
-  }
+  if (years < 1) utilidad = salario * porcentajes[0];
+  else if (years >= 1 && years < 2) utilidad = salario * porcentajes[1];
+  else if (years >= 2 && years < 5) utilidad = salario * porcentajes[2];
+  else if (years >= 5 && years < 10) utilidad = salario * porcentajes[3];
+  else utilidad = salario * porcentajes[4];
+
+  utilidad += salario;
 
   cout << "La utilidad es: " << utilidad << endl;
 
