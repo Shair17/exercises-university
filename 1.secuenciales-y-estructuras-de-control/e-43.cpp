@@ -20,6 +20,7 @@ int main() {
   int edad;
   char sexo, respuesta;
   float nivelHemoblogina;
+  bool estadoAnemia;
 
   cout << "El paciente es menor de un año?";
   cin >> respuesta;
@@ -32,18 +33,18 @@ int main() {
     cin >> nivelHemoblogina;
 
     if (edad <= 1) {
-      if (nivelHemoblogina < 13) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 13) estadoAnemia = true;
+      else estadoAnemia = false;
     }
 
     if (edad <= 6) {
-      if (nivelHemoblogina < 10) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 10) estadoAnemia = true;
+      else estadoAnemia = false;
     }
 
     if (edad <= 12) {
-      if (nivelHemoblogina < 11) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 11) estadoAnemia = true;
+      else estadoAnemia = false;
     }
   }
 
@@ -58,18 +59,18 @@ int main() {
     cin >> nivelHemoblogina;
 
     if (edad <= 5) {
-      if (nivelHemoblogina < 11) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 11) estadoAnemia = true;
+      else estadoAnemia = false;
     }
 
     if (edad <= 10) {
-      if (nivelHemoblogina < 12.6) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 12.6) estadoAnemia = true;
+      else estadoAnemia = false;
     }
 
     if (edad <= 15) {
-      if (nivelHemoblogina < 13) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 13) estadoAnemia = true;
+      else estadoAnemia = false;
     }
   }
 
@@ -87,13 +88,13 @@ int main() {
     cin >> sexo;
 
     if (sexo == 'm' || sexo == 'M') {
-      if (nivelHemoblogina < 12) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 12) estadoAnemia = true;
+      else estadoAnemia = false;
     }
 
     if (sexo == 'f' || sexo == 'F') {
-      if (nivelHemoblogina < 14) cout << "El paciente tiene anemia";
-      else cout << "El paciente no tiene anemia";
+      if (nivelHemoblogina < 14) estadoAnemia = true;
+      else estadoAnemia = false;
     }
   }
 
