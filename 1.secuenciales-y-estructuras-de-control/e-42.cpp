@@ -13,12 +13,45 @@
 using namespace std;
 
 int main() {
-  float capitalActual, prestamo;
+  float capitalActual, prestamo, resto, insumos, incentivos;
 
   cout << "Escribir capital actual: ";
   cin >> capitalActual;
 
-  if (capitalActual <= 0) prestamo = (10000 - capitalActual);
+  if (capitalActual <= 0) {
+    prestamo = (10000 - capitalActual);
+    cout << "Prestamo " << prestamo;
+    resto = (capitalActual - 7000);
+    insumos = resto / 2;
+    incentivos = resto - insumos;
+    cout << "5000 para computo";
+    cout << "Mobiliario 2000";
+    cout << "Insumos " << insumos;
+    cout << "Incentivos " << incentivos;
+  } else {
+    if (capitalActual > 0 && capitalActual < 20000) {
+      prestamo = 20000 - capitalActual;
+      cout << "Prestamo " << prestamo;
+      resto = capitalActual - 7000;
+      insumos = resto / 2;
+      incentivos = resto - insumos;
+      cout << "5000 para computo";
+      cout << "Mobiliario 2000";
+      cout << "Insumos " << insumos;
+      cout << "Incentivos " << incentivos;
+    } else {
+      cout << "No pedirá prestamo";
+      cout << "5000 para computo";
+      resto = capitalActual - 7000;
+      insumos = resto / 2;
+      incentivos = resto - insumos;
+      cout << "Equipo de computo 5000";
+      cout << "Mobiliario 2000";
+      cout << "Insumos " << insumos;
+      cout << "Incentivos " << incentivos;
+      cout << "Resto " << resto;
+    }
+  }
 
   return 0;
 }
