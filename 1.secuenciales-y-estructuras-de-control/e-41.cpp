@@ -16,6 +16,7 @@ using namespace std;
 
 int main() {
   float kilos, precioInicial, precioFinal, descuento;
+  const float DESCUENTOS[4] = { 0, .1, .15, .2 };
 
   cout << "Ingrese la cantidad de manzanas en kilos compradas: ";
   cin >> kilos;
@@ -23,12 +24,12 @@ int main() {
   cout << "Ingrese el precio inicial: ";
   cin >> precioInicial;
 
-  if (kilos <= 2) descuento = 0;
+  if (kilos <= 2) descuento = DESCUENTOS[0];
   else {
-    if (kilos >= 2.01 && kilos <= 5) descuento = 0.05;
+    if (kilos >= 2.01 && kilos <= 5) descuento = DESCUENTOS[1];
     else {
-      if (kilos >= 5.01 && kilos <= 10) descuento = 0.1;
-      else descuento = 0.2;
+      if (kilos >= 5.01 && kilos <= 10) descuento = DESCUENTOS[2];
+      else descuento = DESCUENTOS[3];
     }
   }
 
