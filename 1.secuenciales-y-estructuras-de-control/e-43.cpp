@@ -98,5 +98,7 @@ int main() {
     }
   }
 
+  cout << (estadoAnemia ? "Tiene anemia" : "No tiene anemia");
+
   return 0;
 }
