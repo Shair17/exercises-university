@@ -10,14 +10,14 @@
 using namespace std;
 
 int main() {
-  float numero;
+  /** float numero;
 
   cout << "Ingresa el número: ";
   cin >> numero;
 
   cout << "Sistema Binario: ";
   cout << "Sistema Octal: ";
-  cout << "Sistema Hexadecimal: ";
+  cout << "Sistema Hexadecimal: ";*/
 
   return 0;
 }
