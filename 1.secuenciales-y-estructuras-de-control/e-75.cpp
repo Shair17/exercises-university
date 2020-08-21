@@ -13,6 +13,38 @@
 using namespace std;
 
 int main() {
+  float sueldo, horas, pago = 0;
+  int nTrabajadores, i = 1;
+
+  cout << "Ingrese el sueldo por hora: ";
+  cin >> sueldo;
+
+  cout << "Ingrese el número de trabajadores: ";
+  cin >> nTrabajadores;
+
+  while (i <= nTrabajadores) {
+    cout << "Ingrese las horas trabajadas: ";
+    cin >> horas;
+
+    if (horas <= 40) {
+      pago = horas * sueldo;
+      cout << "Sueldo total " << pago << endl;
+    } else {
+      if (horas > 40 && horas < 80) {
+        sueldo *= 2;
+        pago = horas * sueldo;
+        cout << "Sueldo total " << pago << endl;
+      } else {
+        if (horas >= 80) {
+          sueldo *= 3;
+          pago = horas * sueldo;
+          cout << "Sueldo total " << pago << endl;
+        }
+      }
+    }
+
+    i++;
+  }
 
   return 0;
 }
