@@ -89,6 +89,8 @@ int main() {
         if (edadChimpance > 1 && edadChimpance < 3) chimpanceB += 1;
 
         if (edadChimpance >= 3) chimpanceC += 1;
+
+        chimpance++;
       }
       promedioCA = calcAverage(chimpanceA);
       promedioCB = calcAverage(chimpanceB);
