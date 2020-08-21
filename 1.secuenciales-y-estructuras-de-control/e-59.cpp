@@ -36,10 +36,12 @@ int main() {
     cout << "Ingrese el valor de la tercera venta: ";
     cin >> venta3;
 
+    /** This could be more easier with a loop */
     comisionV1 = venta1 * .1;
     comisionV2 = venta2 * .1;
     comisionV3 = venta3 * .1;
 
+    /** This could be more easier with a loop */
     sueldoTotal = venta1 + venta2 + venta3 + comisionV1 + comisionV2 + comisionV3 + sueldoBase;
     totalComisiones = comisionV1 + comisionV2 + comisionV3;
     totalVentas = venta1 + venta2 + venta3 + totalComisiones;
